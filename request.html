@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Foodar</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="./index.html"><img src="logo.png" /></a>
+		</div>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="./index.html" target="_blank" >Sign-in</a></li>	
+				<li>/</li>
+				<li><a href="./register.html" target="_blank" >Register</a></li>
+				<li>/</li>
+				<li><a href="./request.html" target="_blank" >Request</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Submit your request</h1>
+	<div>
+		<p>Please fill out the form below</p>
+	
+		<br />
+		<form action="#" id="requestform">
+			<div class="formdiv">
+				<h3>Address:</h3>
+				<input type="email" name="requestemail" placeholder="Email"></input>				
+			</div>
+			<div class="formdiv">
+				<h3>Choose Your Style:</h3>
+				<div class="stylediv">
+					<label>Classic <br />This is a classic treatment</label>
+					<br />
+					<input class="foodstyle" type="radio" name="style" value="3"></input>
+				</div>
+				<div class="stylediv">
+					<label>Premium <br />pinky's up</label>
+					<br />
+					<input class="foodstyle" type="radio" name="style" value="5"></input>
+				</div>
+				<div class="stylediv">
+					<label>Royal <br />Your food is served on a silver platter. Literally</label>
+					<br />
+					<input class="foodstyle" type="radio" name="style" value="10"></input>
+				</div>
+			</div>
+			<div class="formdiv">
+				<h3>Restaurant:</h3>
+				<input type="text" name="requestrestaurant" placeholder="Name"></input>				
+			</div>
+			<div class="formdiv">
+				<h3>Tip:</h3>
+				<div class="stylediv">
+					<label>10%<br />They did their job.</label>
+					<br />
+					<input class="tip" type="radio" name="tip" value="10"></input>
+				</div>
+				<div class="stylediv">
+					<label>15%<br />They made you feel special.</label>
+					<br />
+					<input class="tip" type="radio" name="tip" value="15"></input>
+				</div>
+				<div class="stylediv">
+					<label>20%<br />I wanna give them more, but this is all I have!</label>
+					<br />
+					<input class="tip" type="radio" name="tip" value="20"></input>
+				</div>		
+			</div>
+			<div class="total">
+				<h3>Total: $<span id="total"></span></h3>
+				<input type="submit" class="requestsub" value="REQUEST"></input>
+			</div>
+			<div class="clearboth"></div>
+		</form>
+	</div>
+
+<script src="total.js"></script>
+
+<footer>
+	
+	<div class="footdiv">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./register.html">Register</a></li>
+			<li><a href="./about.html">How it all works</a></li>	
+		</ul>
+	</div>
+	<div class="footdiv">
+		<ul>
+			<li>Privacy Policy</li>
+			<li>Terms & Conditions</li>
+		</ul>
+	</div>
+	<div class="footdiv">
+		<ul>
+			<li>Enjoy the food!</li>
+			
+		</ul>
+	</div>
+	<div class="clearboth"></div>
+	<p>&copy; 2017. All rights reserved Steve Lin</p>
+</footer>
+
+</body>
+</html>

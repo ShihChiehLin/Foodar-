@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodar Home page</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script>
+		//var interval = setInterval(counter, 1000);
+		//var btn = document.getElementById("clear");
+		//btn.addEventListener("click", clearVal);
+		/*
+		function clearVal(){
+			console.log("clearing interval...");
+			clearInterval(interval);
+		}
+		*/			
+	</script>
+</head>
+
+<body>
+	
+	<div id="banner">
+		<!--
+		<a id="reqlink" href="./request.html">
+		 
+		<button id="clear" onclick="remove()">Close</button>
+		<img class="bannerimage" src="CONF1334_Food_Outlet_Generic_Red.jpg"> 
+		</a>
+		-->			
+	</div>
+	
+	<script>
+		
+		setTimeout(display, 5000);
+		function display(){
+			//var btn = document.createElement("BUTTON");        // Create a <button> element
+			//var t = document.createTextNode("Close");       // Create a text node
+			//btn.appendChild(t);                                // Append the text to <button>
+			//document.body.appendChild(btn);                    // Append <button> to <body>
+			
+			var bann = document.getElementById("banner");
+			
+			// button display for delete banner
+			// reference: https://stackoverflow.com/questions/8650975/javascript-to-create-a-button-with-onclick
+			var btn = document.createElement("input");
+			btn.type="button";
+			btn.value = "Close";
+			btn.onclick = remove;
+			
+			var buttonattr = document.createAttribute("class");
+			buttonattr.value="buttonset";
+			btn.setAttributeNode(buttonattr);
+			
+			bann.appendChild(btn);
+			///////
+						
+			// image display
+			var img = document.createElement("img");
+			img.src="CONF1334_Food_Outlet_Generic_Red.jpg";
+			
+			var attr = document.createAttribute("class");
+			attr.value="bannerset";
+			img.setAttributeNode(attr);
+			
+			bann.appendChild(img);
+			/* make image as link can't work
+			//var imglink = document.getElementById("reqlink");
+			var attr2 = document.createAttribute("href");
+			attr2.value="https://www.w3schools.com";
+			img.setAttributeNode(attr2);
+			*/
+			//img.setAttribute("href","https://www.w3schools.com");
+			
+			/*
+			var bannt = document.getElementById("ban0");
+			var att =document.createAttribute("href");
+			att.value="https://www.w3schools.com";
+			bannt.setAttributeNode(att);
+			*/
+			//img.setAttribute("img","att");
+					
+			//var imglink = document.getElementById("reqlink");
+			//img.setAttribute("href","https://www.w3schools.com");
+			//document.getElementById("ban0").innerHTML="fgh";
+			//document.getElementById("ban0").href= "https://www.w3schools.com";
+			
+			//bann.appendChild(imglink);
+			//bann.setAttributeNode(att);
+		}
+		
+		
+		function remove(){
+			var bann = document.getElementById("banner");
+			bann.parentNode.removeChild(bann);
+		}
+	</script>
+	
+	
+	<header>
+		<div class="logo">
+			<a href="./index.html"><img src="logo.png" /></a>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="./index.html" target="_blank" >Sign-in</a></li>	
+				<li>/</li>
+				<li><a href="./register.html" target="_blank" >Register</a></li>
+				<li>/</li>
+				<li><a href="./request.html" target="_blank" >Request</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	
+	<section id="foodimage">
+		<h1>Try A New Meal Today</h1>
+	</section>
+	
+	<h1>Find a driver near you!</h1>
+	
+	<div class="checkzip">
+		<p>Type in your zipcode below and click Go! to find a driver near you</p>
+		<!--<form class="inputzip" action="./functions.js" method="post">
+		-->
+		<form class="inputzip">
+			<input id="cityzipcode" type="number" name="zipcode" maxlength="5"/>	
+			<input id="checkcity" type="submit" value="Go"> </input>
+			<div id="cityCheck"></div>
+		</form>
+	</div>
+	<script src="functions.js"></script>
+
+
+
+
+
+<footer>
+	
+	<div class="footdiv">
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./register.html">Register</a></li>
+			<li><a href="./about.html">How it all works</a></li>	
+		</ul>
+	</div>
+	<div class="footdiv">
+		<ul>
+			<li>Privacy Policy</li>
+			<li>Terms & Conditions</li>
+		</ul>
+	</div>
+	<div class="footdiv">
+		<ul>
+			<li>Enjoy the food!</li>
+			
+		</ul>
+	</div>
+	<div class="clearboth"></div>
+	<p>&copy; 2017. All rights reserved Steve Lin</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+		header{
+			position:relative;
+			width:100%;
+			height:70px;
+			
+		}
+		.logo{
+			float:left;
+		}
+		.menu{
+			float:right;
+			text-decoration:none;
+		}
+		.menu > ul > li{
+			display:inline-block;
+		}
+		h1{
+			text-align:center;
+			
+		}
+		.line{
+			height:5px;
+			
+			background-image:url("https://www.w3schools.com/css/img_forest.jpg");
+		}
+		.about > h3{
+			text-align:center;
+		}
+		.about > p{
+			text-align:center;
+		}
+		a{
+			text-decoration:none;
+		}
+		/*
+		h2{
+			background-position:top;
+			background-attachment: fixed;
+			background-image:url("https://www.w3schools.com/css/img_forest.jpg");
+		}
+		*/
+		/*
+		b{
+			background-color:#EE0033;
+		}
+		*/
+		footer{
+			background-color:#223344;
+		}
+		.footdiv{
+			padding:20px;
+			margin:20px;
+			float:left;
+		}
+		.footdiv > ul{
+			list-style-type:none;
+		}
+		.clearboth{
+			clear:both;
+		}
+		footer > p{
+		
+			text-align:center;
+		}
+		
+		/* register.html */
+		/*
+		body > di{
+			display:inline-block;
+			width:100%;
+			height:50%;
+			border:2px dotted gray;
+			
+		}
+		*/
+		fieldset{
+			width:50%;
+		}
+		label{
+			margin-left:50px;
+		}
+		fieldset > label > input{
+			
+			color:black;
+			padding:3px;
+			width:20%;
+			box-sizing: border-box;
+		}
+		fieldset > input{
+			
+			color:black;
+			padding:3px;
+			width:20%;
+			box-sizing: border-box;
+		}
+		/* index.html */
+		.red{
+			color:red;
+		}
+		.green{
+			color:green;
+		}
+		.inputzip{
+			width:500px;
+			margin:auto;
+		}
+		nav{
+			float:right;
+		}
+		.menu{			
+			text-decoration:none;
+			display:inline-block;
+			
+		}
+		
+		#banner{
+			width:100%;
+			
+			
+		}
+		a > .bannerimage{
+			
+			width:100%;
+			height:300px;
+			display:block;
+		}
+		
+		#foodimage{
+			background-image: url("maxresdefault.jpg");
+			background-size: cover;
+			width:100%;
+			height:100%;
+			
+		}
+		section h1{
+			padding:20%;
+			text-align:center;
+			color:white;
+		}
+		a:link{
+			color:black;
+		}
+		a:visited{
+			color:green;
+		}
+		a:hover{
+			text-decoration:underline;
+			color:blue;
+		}
+		ul{
+			list-style-type:none;
+		}
+		#clear{
+			float:right;
+		}
+		.bannerset{
+			width:100%;
+		}
+		.buttonset{
+			float:right;
+		}
+		.checkzip{
+			text-align:center;
+		}
+		/* request.html */
+		.formdiv {
+			margin:50px;
+		}
+		.stylediv{
+			width:30%;
+			
+			border:2px red dotted;
+			display:inline-block;
+			text-align:center;
+		}
+		.stylediv >label{
+			
+		}
+		.stylediv>input{
+		
+			
+		}
+		.total{
+			text-align:center;
+
+		}
+		
